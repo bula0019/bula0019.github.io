@@ -1,0 +1,24 @@
+body {}
+
+header,
+footer {}
+
+.site-title {}
+
+#my-image {}
+
+ul li {
+    list-style-type: square;
+}
+
+ul li:nth-child(2) {
+    font-style: italic;
+}
+
+ul li a {
+    display: inline-block;
+}
+
+ul li a:hover {
+    font-size: 1.2em;
+}
