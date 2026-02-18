@@ -1,11 +1,23 @@
-body {}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
 
 header,
-footer {}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
-.site-title {}
+.site-title {
+    font-size: 2.5em;
+    color: #333;
+}
 
-#my-image {}
+#my-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 ul li {
     list-style-type: square;
@@ -13,6 +25,7 @@ ul li {
 
 ul li:nth-child(2) {
     font-style: italic;
+    background-color: beige;
 }
 
 ul li a {
