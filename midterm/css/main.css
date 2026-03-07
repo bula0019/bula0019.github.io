@@ -99,9 +99,11 @@ button {
     margin-right: 20px;
 }
 
-.radio {
+.radio-group {
     display: inline-block;
     margin-right: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
 /* Footer */
