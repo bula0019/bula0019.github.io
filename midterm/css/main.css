@@ -1,0 +1,94 @@
+/* Page Background */
+body {
+    background-color: #ead0d0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 900px;
+    margin: auto;
+    background-color: #c89999;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    position: relative;
+}
+
+/* Header Image */
+header img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+/* Header Title Over The Image */
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #c89999;
+}
+
+/* Article */
+article {
+    padding: 20px;
+}
+
+/* Article Floating Image Text Wrap */
+.float-img {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Facts section */
+section {
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    border: 1px solid rgb(181, 159, 159);
+    padding: 20px;
+}
+
+/* Inputs andd Textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 15px;
+}
