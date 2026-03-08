@@ -61,12 +61,17 @@ nav a {
     border-right: 1px solid rgb(120, 88, 88);
 }
 
+/* Navigation Hover Effect */
 nav a:hover {
     background-color: rgb(120, 88, 88);
     color: white;
 }
 
+/* Remove the right border from the last navigation link */
 
+nav a:last-child {
+    border-right: none;
+}
 
 /* Article */
 article {
@@ -121,6 +126,7 @@ button {
     background-color: rgb(95, 62, 62);
 }
 
+/* Align radio buttons horizontally with spacing */
 .radio-group {
     display: flex;
     gap: 20px;
