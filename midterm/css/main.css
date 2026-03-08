@@ -37,7 +37,6 @@ header h1 {
 }
 
 /* Avoid collapsing of parent container when using floats */
-
 article::after {
     content: "";
     display: block;
@@ -68,7 +67,6 @@ nav a:hover {
 }
 
 /* Remove the right border from the last navigation link */
-
 nav a:last-child {
     border-right: none;
 }
