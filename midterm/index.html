@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,84 +22,96 @@
 
         <!-- Navigation -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html">HOME</a>
+            <a href="about.html">STORY</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
-        <!-- Article -->
-        <article>
-            <h2>Soft Life</h2>
 
-            <!-- Article Floating Image -->
-            <img src="images/cat.jpg" alt="Cat" class="float-img">
-            <p>Soft life is a lifestyle that emphasizes comfort, ease, and relaxation. It is often associated with
-                luxury and indulgence, but it can also be achieved through simple pleasures and mindful living. The soft
-                life encourages people to prioritize their well-being and happiness, rather than constantly striving for
-                success or material possessions. It can involve practices such as self-care, mindfulness, and spending
-                time in nature. Ultimately, the soft life is about finding joy in the present moment and creating a life
-                that feels fulfilling and meaningful.</p>
-            <p>In a world that often values productivity and achievement, the soft life can be seen as a refreshing
-                alternative. It reminds us that it's okay to slow down, take care of ourselves, and enjoy the simple
-                pleasures in life. Whether it's taking a leisurely walk in the park, indulging in a favorite hobby, or
-                simply spending quality time with loved ones, the soft life encourages us to find happiness in the
-                little things.</p>
-            <p>Embracing the soft life doesn't mean giving up on goals or ambitions, but rather finding a balance
-                between
-                work and relaxation. It encourages us to create a lifestyle that supports our well-being and allows us
-                to enjoy the journey, rather than just focusing on the destination. By prioritizing self-care and
-                mindfulness, we can cultivate a sense of contentment and fulfillment in our lives.</p>
-        </article>
+        <!-- Main Section -->
+        <main>
+            <!-- Article -->
+            <article>
+                <h2>Soft Life</h2>
 
-        <!-- Facts Section -->
-        <section>
-            <h2>Facts about Soft Life</h2>
-            <ul>
-                <li>Soft life is often associated with luxury and indulgence.</li>
-                <li>It encourages people to prioritize their well-being and happiness.</li>
-                <li>Soft life can involve practices such as self-care, mindfulness, and spending time in nature.</li>
-                <li>It is about finding joy in the present moment and creating a fulfilling life.</li>
-            </ul>
-        </section>
+                <!-- Article Floating Image -->
+                <img src="images/cat.jpg" alt="Cat" class="float-img">
+                <!-- Text wrapping the image -->
+                <p>Soft life is a lifestyle that emphasizes comfort, ease, and relaxation. It is often associated with
+                    luxury and indulgence, but it can also be achieved through simple pleasures and mindful living. The
+                    soft
+                    life encourages people to prioritize their well-being and happiness, rather than constantly striving
+                    for
+                    success or material possessions. It can involve practices such as self-care, mindfulness, and
+                    spending
+                    time in nature. Ultimately, the soft life is about finding joy in the present moment and creating a
+                    life
+                    that feels fulfilling and meaningful.</p>
+                <p>In a world that often values productivity and achievement, the soft life can be seen as a refreshing
+                    alternative. It reminds us that it's okay to slow down, take care of ourselves, and enjoy the simple
+                    pleasures in life. Whether it's taking a leisurely walk in the park, indulging in a favorite hobby,
+                    or
+                    simply spending quality time with loved ones, the soft life encourages us to find happiness in the
+                    little things.</p>
+                <p>Embracing the soft life doesn't mean giving up on goals or ambitions, but rather finding a balance
+                    between
+                    work and relaxation. It encourages us to create a lifestyle that supports our well-being and allows
+                    us
+                    to enjoy the journey, rather than just focusing on the destination. By prioritizing self-care and
+                    mindfulness, we can cultivate a sense of contentment and fulfillment in our lives.</p>
+            </article>
 
-        <!-- Contact Section -->
-        <section>
-            <h2>Contact to learn more</h2>
-            <p>If you have any questions or would like to learn more about the soft life, feel free to reach out!</p>
-        </section>
-        <!-- Name Section -->
-        <label for="name">Your name</label>
-        <input type="text" id="name" name="name">
+            <!-- Facts -->
+            <section>
+                <h2>Facts about Soft Life</h2>
+                <ul>
+                    <li>Soft life is often associated with luxury and indulgence.</li>
+                    <li>It encourages people to prioritize their well-being and happiness.</li>
+                    <li>Soft life can involve practices such as self-care, mindfulness, and spending time in nature.
+                    </li>
+                    <li>It is about finding joy in the present moment and creating a fulfilling life.</li>
+                </ul>
+            </section>
 
-        <!-- Email Section -->
-        <label for="email">Your email</label>
-        <input type="email" id="email" name="email">
+            <!-- Contact Section -->
+            <section>
+                <h2>Contact to learn more</h2>
+                <form>
 
-        <!-- Message Section -->
-        <label for="message">Your message</label>
-        <textarea id="message" name="message"></textarea>
+                    <!-- Name Section -->
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name">
 
-        <!-- Buttons -->
+                    <!-- Email Section -->
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email">
 
-        <form>
+                    <!-- Message Section -->
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message"></textarea>
 
-            <label>
-                <input type="radio" name="visit" value="yes"> Yes
-            </label>
-            <label>
-                <input type="radio" name="visit" value="no"> No
-            </label>
-            <label>
-                <input type="radio" name="visit" value="maybe"> Maybe
-            </label>
+                    <!-- Buttons -->
+                    <p>Would you like to visit the soft life?</p>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="visit" value="yes"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="visit" value="no"> No
+                        </label>
+                        <label>
+                            <input type="radio" name="visit" value="maybe"> Maybe
+                        </label>
+                    </div>
+                    <br><br>
+                    <button type="submit">SEND</button>
 
-            <br><br>
-            <button type="submit">SEND</button>
+                </form>
+            </section>
+        </main>
 
-        </form>
-        </section>
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Midterm. All rights reserved.</p>
+            <p>&copy; 2026 Midterm. All rights reserved.</p>
         </footer>
 
     </div>

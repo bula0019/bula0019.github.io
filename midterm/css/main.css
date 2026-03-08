@@ -36,20 +36,37 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Avoid collapsing of parent container when using floats */
+
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* Navigation */
 nav {
     display: flex;
-    justify-content: space-around;
-    height: 60px;
-    padding: 15px;
 }
 
+/* Navigation Spacing Issue */
+
 nav a {
-    text-decoration: none;
     color: black;
     font-weight: bold;
-    background-color: #c89999;
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid rgb(120, 88, 88);
 }
+
+nav a:hover {
+    background-color: rgb(120, 88, 88);
+    color: white;
+}
+
+
 
 /* Article */
 article {
@@ -72,17 +89,20 @@ section {
 }
 
 /* Form Styles */
+/* Square Border and Padding */
+
 form {
-    border: 1px solid rgb(181, 159, 159);
+    border: 1px solid rgb(100, 81, 81);
     padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Inputs andd Textarea */
-input,
+input[type="text"],
+input[type="email"],
 textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 5px;
     margin-bottom: 15px;
     box-sizing: border-box;
 }
@@ -97,11 +117,12 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     margin-right: 20px;
+    color: white;
+    background-color: rgb(95, 62, 62);
 }
 
 .radio-group {
-    display: inline-block;
-    margin-right: 20px;
+    display: flex;
     gap: 20px;
     align-items: center;
 }
