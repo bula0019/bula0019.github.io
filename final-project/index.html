@@ -21,11 +21,11 @@
             <!-- NAVIGATION -->
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -37,165 +37,172 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <img src="images/main-banner.jpg" alt="Office workspace">
+    <main role="main">
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <img src="images/main-banner.jpg" alt="Office workspace">
 
-        <div class="hero-overlay">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Your trusted partner in digital marketing and web development.</p>
-            <a href="#" class="btn-yellow">Connect with us ▶</a>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about">
-        <div class="container about-container">
-
-            <div class="about-image">
-                <img src="images/about-us.jpg" alt="About image">
+            <div class="hero-overlay">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Your trusted partner in digital marketing and web development.</p>
+                <a href="#" class="btn-yellow">Connect with us ▶</a>
             </div>
+        </section>
 
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>We are a team of passionate professionals dedicated to providing exceptional digital marketing and
-                    web development services.</p>
-                <p>Our mission is to help businesses grow and succeed in the digital world through innovative strategies
-                    and cutting-edge technology.</p>
-            </div>
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container about-container">
 
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-
-                <!-- ROW 1 (BIG) -->
-                <article class="service large">
-                    <img src="images/digital.jpg" alt="Digital Transformation">
-                    <h3>Digital Transformation</h3>
-                    <p>We help businesses embrace digital transformation to stay competitive in today's fast-paced
-                        market.</p>
-                    <a href="#" class="btn-dark"> Digital Plans ▶</a>
-                </article>
-
-                <article class="service large">
-                    <img src="images/marketing.jpg" alt="Marketing">
-                    <h3>Marketing</h3>
-                    <p>Our marketing services help you reach your target audience and drive results for your business.
-                    </p>
-                    <a href="#" class="btn-dark"> Marketing Plans ▶</a>
-                </article>
-
-                <!-- ROW 2 (SMALL) -->
-                <article class="service">
-                    <img src="images/video.jpg" alt="Video Production">
-                    <h3>Video Production</h3>
-                    <p>Our video production services help you create high-quality content that showcases your brand
-                        and engages your audience.</p>
-                    <a href="#" class="btn-dark">Video Plans ▶</a>
-                </article>
-
-                <article class="service">
-                    <img src="images/web.jpg" alt="Web Development">
-                    <h3>Web Development</h3>
-                    <p>Our web development services help you build responsive and user-friendly websites that drive
-                        traffic and convert visitors into customers.</p>
-                    <a href="#" class="btn-dark">Web Plans ▶</a>
-                </article>
-
-                <article class="service">
-                    <img src="images/print.jpg" alt="Print Design">
-                    <h3>Print Design</h3>
-                    <p>Our print design services help you create compelling marketing materials that make a lasting
-                        impression.</p>
-                    <a href="#" class="btn-dark">Print Plans ▶</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- VISION -->
-    <section class="vision">
-        <img src="images/vision.jpg" alt="Vision image">
-        <div class="vision-overlay">
-            <h2>Our Vision</h2>
-            <p>At Three Star Media, our vision is to be the leading provider of digital marketing and web development
-                services, empowering businesses to thrive in the digital age.</p>
-            <a href="#" class="btn-blue">Learn More ▶</a>
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="team">
-        <div class="container">
-            <h2>Our Team</h2>
-
-            <!-- MEMBER 1 -->
-            <article class="team-member">
-                <img src="images/john.jpg" alt="John Dooe">
-
-                <div class="team-text">
-                    <h3>John Doe</h3>
-                    <p>CEO & Founder</p>
-                    <p>John is the visionary behind Three Star Media, bringing over 15 years of experience in digital
-                        marketing and web development.</p>
-                </div>
-            </article>
-
-            <!-- MEMBER 2 -->
-            <article class="team-member reverse">
-                <div class="team-text">
-                    <h3> Bob Rite</h3>
-                    <p>Marketing Director</p>
-                    <p>Bob brings a wealth of experience in digital marketing and strategy, helping businesses reach
-                        their target audiences effectively.</p>
-                </div>
-                <img src="images/bob.jpg" alt="Bob Rite">
-            </article>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-
-            <div class="container-grid">
-
-                <!-- CONTACT FORM -->
-                <div class="contact-form">
-                    <h3>Send us a message</h3>
-
-                    <form>
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name">
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
-
-                        <button type="submit" class="btn-yellow">Send</button>
-                    </form>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="About image">
                 </div>
 
-                <!-- MAP -->
-                <div class="contact-map">
-                    <h3>Location</h3>
-                    <img src="images/map.jpg" alt="Map image">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>We are a team of passionate professionals dedicated to providing exceptional digital marketing
+                        and
+                        web development services.</p>
+                    <p>Our mission is to help businesses grow and succeed in the digital world through innovative
+                        strategies
+                        and cutting-edge technology.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+
+                    <!-- ROW 1 (BIG) -->
+                    <article class="service large">
+                        <img src="images/digital.jpg" alt="Digital Transformation">
+                        <h3>Digital Transformation</h3>
+                        <p>We help businesses embrace digital transformation to stay competitive in today's fast-paced
+                            market.</p>
+                        <a href="#" class="btn-dark"> Digital Plans ▶</a>
+                    </article>
+
+                    <article class="service large">
+                        <img src="images/marketing.jpg" alt="Marketing">
+                        <h3>Marketing</h3>
+                        <p>Our marketing services help you reach your target audience and drive results for your
+                            business.
+                        </p>
+                        <a href="#" class="btn-dark"> Marketing Plans ▶</a>
+                    </article>
+
+                    <!-- ROW 2 (SMALL) -->
+                    <article class="service">
+                        <img src="images/video.jpg" alt="Video Production">
+                        <h3>Video Production</h3>
+                        <p>Our video production services help you create high-quality content that showcases your brand
+                            and engages your audience.</p>
+                        <a href="#" class="btn-dark">Video Plans ▶</a>
+                    </article>
+
+                    <article class="service">
+                        <img src="images/web.jpg" alt="Web Development">
+                        <h3>Web Development</h3>
+                        <p>Our web development services help you build responsive and user-friendly websites that drive
+                            traffic and convert visitors into customers.</p>
+                        <a href="#" class="btn-dark">Web Plans ▶</a>
+                    </article>
+
+                    <article class="service">
+                        <img src="images/print.jpg" alt="Print Design">
+                        <h3>Print Design</h3>
+                        <p>Our print design services help you create compelling marketing materials that make a lasting
+                            impression.</p>
+                        <a href="#" class="btn-dark">Print Plans ▶</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- HOURS -->
-    <section class="hours">
-        <div class="container">
-            <h2>Hours of operation</h2>
+        <!-- VISION -->
+        <section id="vision" class="vision">
+            <img src="images/vision.jpg" alt="Vision image">
+            <div class="vision-overlay">
+                <h2>Our Vision</h2>
+                <p>At Three Star Media, our vision is to be the leading provider of digital marketing and web
+                    development
+                    services, empowering businesses to thrive in the digital age.</p>
+                <a href="#" class="btn-blue">Learn More ▶</a>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section id="team" class="team">
+            <div class="container">
+                <h2>Our Team</h2>
+
+                <!-- MEMBER 1 -->
+                <article class="team-member">
+                    <img src="images/john.jpg" alt="John Dooe">
+
+                    <div class="team-text">
+                        <h3>John Doe</h3>
+                        <p>CEO & Founder</p>
+                        <p>John is the visionary behind Three Star Media, bringing over 15 years of experience in
+                            digital
+                            marketing and web development.</p>
+                    </div>
+                </article>
+
+                <!-- MEMBER 2 -->
+                <article class="team-member reverse">
+                    <div class="team-text">
+                        <h3> Bob Rite</h3>
+                        <p>Marketing Director</p>
+                        <p>Bob brings a wealth of experience in digital marketing and strategy, helping businesses reach
+                            their target audiences effectively.</p>
+                    </div>
+                    <img src="images/bob.jpg" alt="Bob Rite">
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+
+                <div class="container-grid">
+
+                    <!-- CONTACT FORM -->
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+
+                        <form>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+
+                            <button type="submit" class="btn-yellow">Send</button>
+                        </form>
+                    </div>
+
+                    <!-- MAP -->
+                    <div class="contact-map">
+                        <h3>Location</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.900720523665!2d-75.7597108651123!3d45.3498143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1776720319722!5m2!1sen!2sca"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HOURS -->
+        <div class="hours">
+            <h3>Hours of operation</h3>
 
             <table>
                 <thead>
@@ -204,7 +211,6 @@
                         <th>Hours</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td>Monday - Friday</td>
@@ -217,7 +223,7 @@
                 </tbody>
             </table>
         </div>
-    </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
