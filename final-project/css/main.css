@@ -1,9 +1,12 @@
- /* GLOBAL STYLES */
+ /* CSS RESET  */
+
  * {
      box-sizing: border-box;
      margin: 0;
      padding: 0;
  }
+
+ /* GLOBAL STYLES - MOBILE*/
 
  body {
      font-family: 'Open Sans', sans-serif;
@@ -23,7 +26,7 @@
  }
 
  h2 {
-     font-size: 2.5rem;
+     font-size: 1.8rem;
      margin-bottom: 20px;
      display: inline-block;
      border-bottom: 4px solid #d4a017;
@@ -31,7 +34,7 @@
  }
 
 
- /* HEADER & NAV */
+ /* HEADER & NAV - MOBILE */
  .header {
      background: #232323;
      padding: 10px 0;
@@ -52,9 +55,9 @@
 
  .nav-list {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      list-style: none;
-     gap: 0;
+     width: 100%;
  }
 
  .nav-list li a {
@@ -78,9 +81,11 @@
 
  .search {
      display: flex;
+     width: 100%;
  }
 
  .search input {
+     flex: 1;
      padding: 5px 10px;
      border: none;
      border-radius: 4px 0 0 4px;
@@ -95,10 +100,10 @@
      cursor: pointer;
  }
 
- /* HERO SECTION */
+ /* HERO SECTION - MOBILE */
  .hero {
      position: relative;
-     height: 500px;
+     height: 380px;
  }
 
  .hero img {
@@ -110,17 +115,16 @@
  .hero-overlay {
      position: absolute;
      top: 50%;
-     left: 10%;
+     left: 5%;
+     right: 5%;
      transform: translateY(-50%);
-
      background: rgba(0, 0, 0, 0.5);
-     max-width: 600px;
-     padding: 40px;
+     padding: 25px;
  }
 
  .hero-overlay h1 {
      color: white;
-     font-size: 3rem;
+     font-size: 2rem;
      line-height: 1.1;
      margin-bottom: 15px;
  }
@@ -140,7 +144,7 @@
      width: fit-content;
  }
 
- /* ABOUT SECTION */
+ /* ABOUT SECTION - MOBILE */
  .about {
      background: #fdf3d0;
      padding: 60px 0;
@@ -148,7 +152,7 @@
 
  .about-container {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      gap: 30px;
      align-items: center;
  }
@@ -169,14 +173,14 @@
      object-fit: cover;
  }
 
- /* SERVICES SECTION */
+ /* SERVICES SECTION - MOBILE */
  .services {
      padding: 60px 0;
  }
 
  .services-grid {
      display: grid;
-     grid-template-columns: repeat(6, 1fr);
+     grid-template-columns: 1fr;
      gap: 30px;
  }
 
@@ -185,14 +189,6 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
- }
-
- .service.large {
-     grid-column: span 3;
- }
-
- .service:not(.large) {
-     grid-column: span 2;
  }
 
  .service h3 {
@@ -263,27 +259,27 @@
      width: fit-content;
  }
 
- /* TEAM SECTION */
+ /* TEAM SECTION - MOBILE */
  .team {
      padding: 60px 0 0;
  }
 
  .team-member {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      margin-bottom: 40px;
  }
 
  .team-member img {
-     width: 50%;
-     height: 400px;
+     width: 100%;
+     height: 300px;
      object-fit: cover;
      flex-shrink: 0;
  }
 
  .team-text {
      background: #fdf3d0;
-     padding: 60px;
+     padding: 30px;
      flex: 1;
      display: flex;
      flex-direction: column;
@@ -292,7 +288,7 @@
 
  .team-text h3 {
      font-size: 1.5rem;
-     margin-bottom: 10px;
+     margin-bottom: 5px;
  }
 
  .team-text p:first-of-type {
@@ -304,14 +300,14 @@
      flex-direction: row-reverse;
  }
 
- /* CONTACT SECTION */
+ /* CONTACT SECTION - MOBILE */
  .contact {
      padding: 60px 0;
  }
 
  .container-grid {
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr;
      gap: 30px;
  }
 
@@ -321,6 +317,7 @@
      padding: 10px;
      margin: 10px 0;
      border: 1px solid #ccc;
+     font-family: inherit;
  }
 
  .contact-form label {
@@ -333,10 +330,17 @@
      resize: vertical;
  }
 
+ .contact-form .btn-yellow {
+     margin-top: 15px;
+     border: none;
+     cursor: pointer;
+ }
+
  .contact-map iframe {
      width: 100%;
      height: 300px;
      display: block;
+     border: 0;
  }
 
  .hours {
@@ -369,12 +373,18 @@
      border-top: 10px solid #d4a017;
  }
 
+ .footer p {
+     margin: 4px 0;
+ }
+
+ /*  DESKTOP */
  /* MEDIA QUERIES */
- @media (max-width: 767px) {
+ @media (min-width: 760px) {
      .header-container {
-         flex-direction: column;
+         flex-direction: row;
+         justify-content: space-between;
          align-items: center;
-         gap: 10px;
+         gap: 0px;
      }
 
      .about-container {
@@ -382,29 +392,39 @@
          align-items: center;
      }
 
+     .about-image,
+     .about-text {
+         flex: 1;
+     }
+
      .nav-list {
-         flex-direction: column;
+         flex-direction: row;
          align-items: center;
-         width: 100%;
+         width: auto;
      }
 
      .nav-list li {
-         width: 100%;
-         text-align: center;
+         width: auto;
+         text-align: left;
+     }
+
+     .search {
+         width: auto;
      }
 
      .hero {
-         height: 400px;
+         height: 500px;
      }
 
      .hero-overlay {
-         left: 5%;
-         right: 5%;
-         max-width: 100%;
+         left: 10%;
+         right: auto;
+         max-width: 600px;
+         padding: 40px;
      }
 
      .hero-overlay h1 {
-         font-size: 2rem;
+         font-size: 3rem;
      }
 
      .about-container {
@@ -412,37 +432,45 @@
      }
 
      .services-grid {
-         grid-template-columns: 1fr;
+         grid-template-columns: repeat(6, 1fr);
      }
 
-     .service.large,
+     .service.large {
+         grid-column: span 3;
+     }
+
+
      .service:not(.large) {
-         grid-column: span 1;
+         grid-column: span 2;
      }
 
-     .team-member,
-     .team-member.reverse {
-         flex-direction: column;
+     .team-member {
+         flex-direction: row;
      }
 
      .team-member img {
-         width: 100%;
-         height: 300px;
+         width: 50%;
+         height: 400px;
+         flex-shrink: 0;
      }
 
      .team-text {
-         padding: 30px;
+         padding: 60px;
+     }
+
+     .team-member.reverse {
+         flex-direction: row-reverse;
      }
 
      .container-grid {
-         grid-template-columns: 1fr;
+         grid-template-columns: 1fr 1fr;
      }
 
      .hours {
-         grid-column: span 1;
+         grid-column: span 2;
      }
 
      h2 {
-         font-size: 1.8rem;
+         font-size: 2.5rem;
      }
  }
